@@ -28,7 +28,7 @@ fi
 
 PACKAGES="doxygen graphviz ttf-freefont $4"
 if [ "$BUILD_LATEX" = true ] ; then
-  PACKAGES="$PACKAGES perl build-base texlive-full biblatex ghostscript"
+  PACKAGES="$PACKAGES perl build-base texlive-latex-extra biblatex ghostscript"
 fi
 apk add $PACKAGES
 
